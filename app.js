@@ -22,7 +22,7 @@ app.enable('trust proxy');  // this is behind a front facing proxy
 // Implement CORS
 app.use(cors());
 
-// enable pre-flight request for DELETE 
+// enable pre-flight request
 app.options('*', cors());
 // app.options('/api/v1/users/:id', cors());
 // docs: https://expressjs.com/en/resources/middleware/cors.html
